@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1, 86, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.start {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(240, 240, 249);
+    border-radius: 20px;
+}
+
+hr {
+    display: inline-block;
+    border: 2px solid rgb(1, 86, 37);
+    width: 90%;
+    margin-left: 20px;  
+}
+
+h1 {
+    text-align: center;
+    color: rgb(1, 86, 37);
+    margin-top: 5%;
+    font-size: 40px;
+}
+
+.instruction {
+    width: 90%;
+    margin-left: 20px; 
+    
+}
+
+h4 {
+    font-size: large;
+    margin-top: 5%;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+.btn {  
+    width: 90%;
+    height: auto;
+    margin-left: 20px; 
+    text-align: center;
+    margin-top: 13%;
+}
+
+.btn button {
+    width: 120px;
+    height: 50px;
+    background-color:  rgb(1, 86, 37);
+    color: #ffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
