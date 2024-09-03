@@ -14,7 +14,7 @@ body {
 
 .start {
     width: 400px;
-    height: 400px;
+    height: auto;
     background-color: rgb(240, 240, 249);
     border-radius: 20px;
 }
@@ -53,11 +53,12 @@ ol {
     height: auto;
     margin-left: 20px; 
     text-align: center;
-    margin-top: 13%;
+    margin-top: 6%;
+    margin-bottom: 2%;
 }
 
 .btn button {
-    width: 120px;
+    width: 130px;
     height: 50px;
     background-color:  rgb(1, 86, 37);
     color: #ffff;
