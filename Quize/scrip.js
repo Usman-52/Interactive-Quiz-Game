@@ -31,7 +31,66 @@ var questions = [
             "bgcolor",
             "background"
         ],
+        correctAnswer: 1  
+    },
 
-        
+    {
+        question: ["Which method is used to find an HTML element by its id in JavaScript?"],
+        choices: [
+            "querySelector()",
+            "getElementsByClass()",
+            "getElementById()",
+            "getIdElement()"
+        ],
+        correctAnswer: 2
+    },
+
+    {
+        question: ["Which of the following is a correct way to declare a JavaScript variable?"],
+        choices: [
+            "var x = 10;",
+            "variable x = 10;",
+            "let x = 10;",
+            "Both a) and c)"
+        ],
+        correctAnswer: 3
+    },
+
+    {
+        question: ["How can you add a JavaScript module file to an HTML document?"],
+        choices: [
+         '<script src="file.js"></script>',
+         '<script type="module" src="./scrip.js"></script>',
+         ' <javascript src="file.js"></javascript>',
+         '<script href="file.js"></script>'
+        ],
+        choices: 1
+    },
+
+    {
+        question: ["How can you make a list that lists its items with squares?"],
+        choices: [
+            "list-square: square;",
+            "list-style: square;",
+            "list-type: square;",
+            "list-style-type: square;"
+        ],
+        correctAnswer: 3
+    },
+
+    {
+        question: ["How can you create a table in HTML?"],
+        choices: [
+            "Using <table>, <td>, <tr>",
+            "Using <table>, <th>, <td>",
+            "Using <table>, <tr>, <td>",
+            "Using <table>, <th>, <tr>"
+        ],
+        correctAnswer: 2
     }
 ]
+
+function showQuestions(questions) {
+    
+    
+}
