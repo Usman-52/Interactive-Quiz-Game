@@ -90,7 +90,39 @@ var questions = [
     }
 ]
 
-function showQuestions(questions) {
+var currentQuestionIndex = 0;
+var score = 0;
+
+function printQuestions() {
+    var questionElement = document.getElementById("questionArea")
+    questionElement.textContent = questions[currentQuestionIndex].question;
+    document.getElementById("choice-A").textContent = questions[currentQuestionIndex].choices[0];
+    document.getElementById("choice-B").textContent = questions[currentQuestionIndex].choices[1];
+    document.getElementById("choice-C").textContent = questions[currentQuestionIndex].choices[2];
+    document.getElementById("choice-D").textContent = questions[currentQuestionIndex].choices[3];   
+}
+
+
+
+function checkAnswer(currentChoiceIndex) {
     
+    if (currentChoiceIndex === questions[currentQuestionIndex].correctAnswer) {
+        
+        alert("hello")
+        score++;
+        printQuestions();
+    }
+    else{
+        document.getElementById("choice-B").style.backgroundColor = "Red";
+        document.getElementById("choice-C").style.backgroundColor = "Red";
+        document.getElementById("choice-D").style.backgroundColor = "Red";
+
+        printQuestions();
+    }
     
 }
+
+printQuestions();
+
+
+// checkAnswer();

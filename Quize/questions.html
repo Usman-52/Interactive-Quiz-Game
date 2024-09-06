@@ -11,13 +11,13 @@
 
     <div class="main-container">
 
-        <div class="questionArea">
+        <div class="questionArea" id="questionArea">
 
         </div>
 
         <div class="choices-container">
             <div class="label">A</div>
-            <div class="choices" id="choice-A"></div>
+            <div class="choices" id="choice-A" onclick="checkAnswer();"></div>
             <div class="label">B</div>
             <div class="choices" id="choice-B"></div>
             <div class="label">C</div>
@@ -27,13 +27,13 @@
         </div>
 
         <div class="Btns">
-            <button>Next</button>
+            <button id="nextBtn">Next</button>
             <a href="../Result/result.html"><button type="submit">Result</button></a>
         </div>
 
     </div>
 
 
-    <script type="module" src="./scrip.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
