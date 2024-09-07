@@ -61,10 +61,10 @@ var questions = [
         choices: [
          '<script src="file.js"></script>',
          '<script type="module" src="./scrip.js"></script>',
-         ' <javascript src="file.js"></javascript>',
+         '<javascript src="file.js"></javascript>',
          '<script href="file.js"></script>'
         ],
-        choices: 1
+        correctAnswer: 1,
     },
 
     {
@@ -91,6 +91,7 @@ var questions = [
 ]
 
 var currentQuestionIndex = 0;
+var nextBtn = document.getElementById("nextBtn");
 var score = 0;
 
 function printQuestions() {
@@ -99,30 +100,38 @@ function printQuestions() {
     document.getElementById("choice-A").textContent = questions[currentQuestionIndex].choices[0];
     document.getElementById("choice-B").textContent = questions[currentQuestionIndex].choices[1];
     document.getElementById("choice-C").textContent = questions[currentQuestionIndex].choices[2];
-    document.getElementById("choice-D").textContent = questions[currentQuestionIndex].choices[3];   
+    document.getElementById("choice-D").textContent = questions[currentQuestionIndex].choices[3]; 
+    
 }
 
 
 
-function checkAnswer(currentChoiceIndex) {
+function checkAnswer(choiceIndex) {
+
+    var correctAnswerIndex = questions[currentQuestionIndex].correctAnswer;
     
-    if (currentChoiceIndex === questions[currentQuestionIndex].correctAnswer) {
+    if (choiceIndex === correctAnswerIndex) {
         
-        alert("hello")
+        document.getElementById()
+        currentQuestionIndex++;
         score++;
         printQuestions();
     }
     else{
-        document.getElementById("choice-B").style.backgroundColor = "Red";
-        document.getElementById("choice-C").style.backgroundColor = "Red";
-        document.getElementById("choice-D").style.backgroundColor = "Red";
 
-        printQuestions();
+        alert("Wrong Answer!");
     }
     
 }
 
+nextBtn.addEventListener("click", () => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex <= questions.length) {
+        printQuestions();
+    }
+    else {
+        alert("Quiz finished! Click on Result Button.");
+    }
+});    
+
 printQuestions();
-
-
-// checkAnswer();
