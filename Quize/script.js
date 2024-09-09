@@ -1,4 +1,3 @@
-export {};
 
 var questions = [
     {
@@ -104,21 +103,17 @@ function printQuestions() {
     
 }
 
-
-
 function checkAnswer(choiceIndex) {
 
     var correctAnswerIndex = questions[currentQuestionIndex].correctAnswer;
     
     if (choiceIndex === correctAnswerIndex) {
-        
-        document.getElementById()
-        currentQuestionIndex++;
+
+        alert("Correct Answer!")
         score++;
         printQuestions();
     }
     else{
-
         alert("Wrong Answer!");
     }
     
